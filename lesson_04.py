@@ -18,5 +18,5 @@ def get_recommendation(change_percentage):
 for i in range(len(stocks)):
     change_percentage = calculate_change(buy_prices[i], current_prices[i])
     recommendation = get_recommendation(change_percentage)
-    print(f"{stocks[i]} has change of {change_percentage}, {recommendation}")
+    print(f"{stocks[i]} has change of {change_percentage:.2f}, {recommendation}")
     print()
