@@ -13,3 +13,10 @@ print(f"Buy price: {buy_price}")
 print(f"Current price: {current_price}")
 print(f"Profit/Loss: {profit_loss}")
 print(f"Change: {change_percent:.2f}%")
+
+if change_percent > 20:
+    print("Strong gain - consider taking profits")
+elif change_percent < -10:
+    print("Significant loss - review position")
+else:
+    print("Hold steady")
